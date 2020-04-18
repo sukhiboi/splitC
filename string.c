@@ -58,11 +58,12 @@ void print_splitted_string(Array_Pointer split_string)
     printf("[ ");
     for (int i = 0; i < split_string->length; i++)
     {
+        printf("'");
         for (int j = 0; j < split_string->elements[i]->length; j++)
         {
             printf("%c", split_string->elements[i]->elements[j]);
         }
-        printf(" ");
+        printf("' ");
     }
     printf("]\n");
 }
